@@ -1,0 +1,9 @@
+.row > div{
+  padding: 20px;
+  width: 100px;
+  background-color: lightyellow;
+  border: 5px solid blue;
+}
+.alert-message{
+  margin: 20px;
+}

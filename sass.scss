@@ -1,0 +1,30 @@
+$color: green;
+div{
+  ul, ol {
+    color: $color;
+    font-size: 20px;
+  }
+  p{
+    color: crimson;
+    font-size: 25px;
+  }
+}
+%message{
+  font-family: sans-serif;
+  font-size: 20px;
+  border: 1px solid black;
+  margin: 20px;
+  padding: 20px;
+}
+.success{
+  @extend %message;
+  background-color: yellow;
+}
+.error{
+  @extend %message;
+  background-color: blue;
+}
+.danger{
+  @extend %message;
+  background-color: red;
+}

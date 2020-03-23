@@ -1,0 +1,65 @@
+
+
+h1{
+  color: grey;
+}
+
+ul > li{
+  color: green;
+}
+input[ type = text ]{
+  background-color: lightgreen;
+}
+input[type = number]{
+  background-color: lightyellow;
+}
+
+button{
+  margin: 20px;
+  width: 100x;
+  height: 50px;
+  background-color: lightgreen;
+  font-size: 20px;
+}
+
+button:hover{
+  background-color: lightblue;
+}
+
+a::before{
+  content: "\21d2 Click here: ";
+  font-weight: bold;
+}
+p::selection{
+  background-color: black;
+  color: white;
+}
+.screen-only{
+  color: red;
+}
+@media print {
+  .screen-only{
+    display: none;
+  }
+}
+@media (min-width:700px){
+  .color-change{
+    background-color: crimson;
+  }
+}
+
+@media (max-width: 699px){
+  .color-change{
+    background-color: blue;
+  }
+}
+@media (min-width:700px){
+  .thankyou::before{
+    content: "Thank you for visiting the page"
+  }
+}
+@media (max-width:699px){
+  .thankyou::before{
+    content: "Thank you"
+  }
+}
